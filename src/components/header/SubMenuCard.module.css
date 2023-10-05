@@ -1,0 +1,28 @@
+.subMenuCard {
+  width: 31%;
+  max-width: 27rem;
+  min-height: 28rem;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, .1);
+  background-color: #fff;
+}
+
+.subMenuCard>h2 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.subMenu>li {
+  margin-bottom: 1.5rem;
+}
+
+.subMenu>li>a {
+  font-size: 1.4rem;
+  opacity: 0.8;
+}
+
+.subMenu>li>a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}

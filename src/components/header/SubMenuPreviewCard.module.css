@@ -1,0 +1,30 @@
+.subPreviewCard {
+  width: 277px;
+  height: 153px;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.subPreviewCard:hover {
+  outline: 1px solid var(--color-blue);
+}
+
+.subPreviewCard>h2 {
+  position: absolute;
+  font-size: 1.6rem;
+  margin: 3rem;
+  z-index: 10;
+}
+
+.subPreviewCard>a>img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 274px;
+  height: 150px;
+  border-radius: 1rem;
+}
+

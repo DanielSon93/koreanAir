@@ -1,0 +1,108 @@
+.reservation {
+  width: 100vw;
+  height: 503px;
+  background-image: url('https://www.koreanair.com/wwwupload/maincontents/quickbooking/mainopen.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--color-gray);
+}
+
+.reservation>section {
+  width: 95%;
+  max-width: 1280px;
+  height: 68%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.notice {
+  width: 100%;
+  height: 11.3%;
+  border-radius: 1rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  color: var(--color-red);
+  font-size: 1.4rem;
+}
+
+.noticeImg {
+  width: 4rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noticeImg>img {
+  width: 16px;
+  height: 16px;
+  margin-bottom: 0.1rem;
+}
+
+.notice>span {
+  color: var(--color-red);
+  font-size: 1.4rem;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  line-height: 11.3%;
+  margin-left: -0.4rem;
+}
+
+.notice>span:hover {
+  text-decoration: underline;
+}
+
+.reservationAll {
+  width: 100%;
+  height: 88.7%;
+  margin-top: 20px;
+  border-radius: 2rem;
+  background-color: transparent;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.reservationMainMenu {
+  display: flex;
+  gap: 0.1rem;
+}
+
+.reservationMainMenu>li {
+  width: 25%;
+  height: 9rem;
+  color: #fff;
+  text-align: center;
+  padding-top: 1.5rem;
+  font-size: 1.6rem;
+  background-color: var(--color-darkgray);
+  cursor: pointer;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+
+.reservationMainMenu>li:hover {
+  text-decoration: underline;
+}
+
+.reservationMainMenu>li.active {
+  color: #000;
+  font-weight: bold;
+  background-color: #fff;
+  text-decoration: underline;
+}
+
+.reservationSubMenu {
+  width: 100%;
+  border-radius: 2rem;
+  background-color: #fff;
+  flex: 1 1 auto;
+  margin-top: -3.5rem;
+}
