@@ -6,16 +6,8 @@ import SubMenuPreviews from './SubMenuPreviewCard';
 export default function SubMenu({ menu, idx, isActive, handleActiveMainMenu }) {
   const { menus, previews } = menu;
 
-  const handleMouseEnter = (e) => {
-    handleActiveMainMenu(true, idx);
-  }
-
-  const handleMouseLeave = (e) => {
-    handleActiveMainMenu(false, idx);
-  }
-
   return (
-    <div className={`${styles.subMenus} ${isActive ? styles.active : ''}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+    <div className={`${styles.subMenus} ${isActive ? styles.active : ''}`} onMouseEnter={() => handleActiveMainMenu(true, idx)} onMouseLeave={() => handleActiveMainMenu(false, idx)}>
       <div className={styles.subMenu}>
         {
           menus && menus.map((subMenu, idx) => <SubMenuCard key={idx} subMenu={subMenu} />)

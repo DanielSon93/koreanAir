@@ -3,7 +3,8 @@
 :root {
   --color-blue: rgb(7, 7, 242);
   --color-darkblue: #00256c;
-  --color-gray: #f8f9fc;
+  --color-lightgray: #f8f9fc;
+  --color-gray: #d9dbe1;
   --color-darkgray: #65728a;
   --color-red: #de001b;
 }

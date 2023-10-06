@@ -1,0 +1,23 @@
+.listMultipleWrapper {
+  display: flex;
+  margin-left: 5rem;
+}
+
+.listMultiple {
+  font-size: 1.5rem;
+  opacity: 0.8;
+  padding: 0.2rem 0.3rem 0.4rem 0.3rem;
+  margin-right: 3rem;
+}
+
+.listMultiple:hover {
+  outline: 1px solid var(--color-blue);
+  border-radius: 0.2rem;
+}
+
+.listMultiple.active {
+  border-bottom: 3px solid var(--color-red);
+  color: var(--color-darkblue);
+  opacity: 1;
+  font-weight: bold;
+}

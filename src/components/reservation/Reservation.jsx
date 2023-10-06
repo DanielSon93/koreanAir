@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import styles from './Reservation.module.css';
+import ReservationForm from './form/ReservationForm';
+import CheckForm from './form/CheckForm';
+import CurrentSituationForm from './form/CurrentSituationForm';
 
 export default function Reservation() {
   const [reservationMenuList, setReservationMenuList] = useState(initReservationMenuList);
@@ -8,7 +11,7 @@ export default function Reservation() {
     setReservationMenuList((prev) => {
       return prev.map((menu, idx) => ({
         ...menu,
-        status: idx === selectedIdx,
+        isSelected: idx === selectedIdx,
       }));
     });
   };
@@ -25,11 +28,18 @@ export default function Reservation() {
         <div className={styles.reservationAll}>
           <ul className={styles.reservationMainMenu}>
             {
-              reservationMenuList.map((menu, idx) => <li key={idx} className={menu.status ? styles.active : ''} onClick={() => handleClick(idx)}>{menu.about}</li>)
+              reservationMenuList.map((menu, idx) => <li key={idx} className={menu.isSelected ? styles.active : ''} onClick={() => handleClick(idx)}>{menu.about}</li>)
             }
           </ul>
           <div className={styles.reservationSubMenu}>
-
+            {
+              reservationMenuList.map((menu, idx) => {
+                if(idx === 0) return <ReservationForm key={idx} isSelected={menu.isSelected} />
+                if(idx === 1 || idx == 2) return <CheckForm key={idx} isSelected={menu.isSelected} />
+                if(idx === 3) return <CurrentSituationForm key={idx} isSelected={menu.isSelected} />
+                return null;
+              })
+            }
           </div>
         </div>
       </section>
@@ -40,18 +50,18 @@ export default function Reservation() {
 const initReservationMenuList = [
   {
     "about": "항공권 예매",
-    "status": true
+    "isSelected": true
   },
   {
     "about": "예약 조회",
-    "status": false
+    "isSelected": false
   },
   {
     "about": "체크인",
-    "status": false
+    "isSelected": false
   },
   {
     "about": "항공권 현황",
-    "status": false
+    "isSelected": false
   },
 ];

@@ -165,7 +165,7 @@
   transform: translateX(-50%);
   width: 100%;
   max-width: 128rem;
-  background-color: var(--color-gray);
+  background-color: var(--color-lightgray);
   padding: 6rem 6rem 5rem;
   display: none;
 }

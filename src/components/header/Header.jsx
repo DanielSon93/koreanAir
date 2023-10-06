@@ -58,7 +58,8 @@ export default function Header() {
         </div>
         <ul className={styles.mainMenus}>
           {
-            navMenuList && navMenuList.map((menu, idx) => <MainMenu key={idx} menu={menu} idx={idx} isActive={isActiveMainMenu[idx]} handleActiveMainMenu={handleActiveMainMenu} />)
+            navMenuList && navMenuList.map((menu, idx) =>
+              <MainMenu key={idx} menu={menu} idx={idx} isActive={isActiveMainMenu[idx]} handleActiveMainMenu={handleActiveMainMenu} />)
           }
         </ul>
         <div className={styles.utils}>
@@ -71,7 +72,8 @@ export default function Header() {
         </div>
       </nav>
       {
-        navMenuList && navMenuList.map((menu, idx) => <SubMenu key={idx} menu={menu} idx={idx} isActive={isActiveMainMenu[idx]} handleActiveMainMenu={handleActiveMainMenu} />)
+        navMenuList && navMenuList.map((menu, idx) =>
+          <SubMenu key={idx} menu={menu} idx={idx} isActive={isActiveMainMenu[idx]} handleActiveMainMenu={handleActiveMainMenu} />)
       }
     </header>
   )
