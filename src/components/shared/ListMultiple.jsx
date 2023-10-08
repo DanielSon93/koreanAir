@@ -3,14 +3,13 @@ import styles from './ListMultiple.module.css';
 
 export default function ListMultiple({ datas, handleClickList }) {
 
+  console.log(datas);
   return (
     <ul className={styles.listMultipleWrapper}>
       {
-        datas && datas.map((menu, idx) =>
-          <li key={idx}
-            className={`${styles.listMultiple} ${menu.isSelected ? styles.active : ''}`}
-            onClick={() => handleClickList(idx)}>
-            {menu.about}
+        datas && datas.map((data, idx) =>
+          <li key={idx} className={`${styles.listMultiple} ${data.isSelected ? styles.active : ''}`} onClick={() => handleClickList(idx)}> 
+            <label>{data.about}</label>
           </li>
         )
       }

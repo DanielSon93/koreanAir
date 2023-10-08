@@ -1,7 +1,7 @@
 .form {
   width: 100%;
   height: 100%;
-  padding: 3rem 4rem 1rem 4rem;
+  padding: 3rem 2.5rem 1rem 2.5rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -13,16 +13,85 @@
   flex-direction: column;
 }
 
-.form>div {
+.majorInfo {
   width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+.detailInfo {
+  width: 100%;
+  flex: 1 1 auto;
   display: flex;
   align-items: center;
 }
 
-.form>div:last-child {
-  flex: 1 1 auto;
+.destinationSearch {
+  height: 50%;
+  width: 23%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.destination {
+.travelPlans {
+  flex: 1 1 auto;
+  height: 60%;
+  padding: 0 1rem 0 3.5rem;
   display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.travelDate {
+  width: 55%;
+  height: 100%;
+  position: relative;
+}
+
+.travelDate>h3 {
+  color: var(--color-darkgray-strong);
+  font-size: 1.4rem;
+  font-weight: lighter;
+  margin-top: 1.4rem;
+}
+
+.travelDate>button {
+  width: 100%;
+  height: 45%;
+  position: absolute;
+  bottom: 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-darkgray-strong);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.travelDate>button:hover {
+  outline: 1px solid var(--color-blue);
+  border-top-left-radius: 0.1rem;
+  border-top-right-radius: 0.1rem;
+  padding-left: 1rem;
+}
+
+.travelDateSelector>span {
+  font-size: 1.6rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.travelDateSelector>span::before {
+  content: '';
+  width: 2.6rem;
+  height: 2.6rem;
+  background-image: url('https://www.koreanair.com/icon-main-quick__calendar.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 2.4rem 2.4rem;
+  margin-right: 0.3rem;
 }

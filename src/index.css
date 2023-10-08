@@ -1,11 +1,10 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap'); */
-
 :root {
   --color-blue: rgb(7, 7, 242);
   --color-darkblue: #00256c;
   --color-lightgray: #f8f9fc;
   --color-gray: #d9dbe1;
   --color-darkgray: #65728a;
+  --color-darkgray-strong: #767676;
   --color-red: #de001b;
 }
 
@@ -57,7 +56,17 @@ a:visited {
   color: #000;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url();
+}
+
+select::-ms-expand {
+  display: none;
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

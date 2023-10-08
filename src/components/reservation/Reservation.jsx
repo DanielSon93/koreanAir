@@ -1,11 +1,12 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './Reservation.module.css';
 import ReservationForm from './form/ReservationForm';
 import CheckForm from './form/CheckForm';
 import CurrentSituationForm from './form/CurrentSituationForm';
+import axios from 'axios';
 
 export default function Reservation() {
-  const [reservationMenuList, setReservationMenuList] = useState(initReservationMenuList);
+  const [reservationMenuList, setReservationMenuList] = useState([]);
 
   const handleClick = (selectedIdx) => {
     setReservationMenuList((prev) => {
@@ -15,6 +16,12 @@ export default function Reservation() {
       }));
     });
   };
+
+  useEffect(() => {
+    axios.get('/data/reservationList.json')
+      .then(res => setReservationMenuList(res.data.reservationMenuList))
+      .catch(console.error);
+  }, [])
 
   return (
     <div className={styles.reservation}>
@@ -34,9 +41,9 @@ export default function Reservation() {
           <div className={styles.reservationSubMenu}>
             {
               reservationMenuList.map((menu, idx) => {
-                if(idx === 0) return <ReservationForm key={idx} isSelected={menu.isSelected} />
-                if(idx === 1 || idx == 2) return <CheckForm key={idx} isSelected={menu.isSelected} />
-                if(idx === 3) return <CurrentSituationForm key={idx} isSelected={menu.isSelected} />
+                if (idx === 0) return <ReservationForm key={idx} isSelected={menu.isSelected} datas={menu.datas} />
+                if (idx === 1 || idx === 2) return <CheckForm key={idx} idx={idx} isSelected={menu.isSelected} />
+                if (idx === 3) return <CurrentSituationForm key={idx} isSelected={menu.isSelected} datas={menu.datas} />
                 return null;
               })
             }
@@ -46,22 +53,3 @@ export default function Reservation() {
     </div>
   )
 }
-
-const initReservationMenuList = [
-  {
-    "about": "항공권 예매",
-    "isSelected": true
-  },
-  {
-    "about": "예약 조회",
-    "isSelected": false
-  },
-  {
-    "about": "체크인",
-    "isSelected": false
-  },
-  {
-    "about": "항공권 현황",
-    "isSelected": false
-  },
-];

@@ -7,7 +7,7 @@
 .btnDouble>li {
   border-radius: 2rem;
   display: inline-block;
-  padding: 0.9rem 2.5rem;
+  padding: 0.8rem 2.5rem;
   transition: all 0.3s ease-out;
 }
 
@@ -19,17 +19,17 @@
   flex: 1 1 auto;
 }
 
-.btnDouble>li>span {
-  font-size: 1.5rem;
+.btnDouble>li>label {
+  font-size: 1.6rem;
   color: var(--color-darkblue);
   cursor: pointer;
 }
 
-.btnDouble>li>span:hover {
+.btnDouble>li>label:hover {
   text-decoration: underline;
 }
 
-.btnDouble>li.active>span {
+.btnDouble>li.active>label {
   color: #fff;
   font-weight: bold;
 }

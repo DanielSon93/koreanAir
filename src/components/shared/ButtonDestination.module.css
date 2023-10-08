@@ -1,0 +1,33 @@
+.button {
+  height: 100%;
+  width: 41%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  outline: 1px solid var(--color-blue);
+}
+
+.button>span {
+  cursor: pointer;
+}
+
+.button>span:first-child {
+  font-size: 3.3rem;
+  font-weight: bold;
+  color: var(--color-darkgray-strong);
+}
+
+.button>span:last-child {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  color: var(--color-darkgray-strong);
+}
