@@ -20,10 +20,6 @@ export default function ReservationForm({ isSelected, datas }) {
     dispatchList({ selectedIdx });
   }, []);
 
-  const handleCityName = () => {
-    setCityName();
-  }
-
   return (
     <form className={`${styles.form} ${isSelected ? styles.active : ''}`}>
       <div className={styles.majorInfo}>
@@ -32,9 +28,9 @@ export default function ReservationForm({ isSelected, datas }) {
       </div>
       <div className={styles.detailInfo}>
         <div className={styles.destinationSearch}>
-          <ButtonDestination datas={cityName[0]} handleCityName={handleCityName} />
-          <ButtonReverseDestination datas={cityName} handleCityName={handleCityName} />
-          <ButtonDestination datas={cityName[1]} handleCityName={handleCityName} />
+          <ButtonDestination datas={cityName[0]} handleSearch={setCityName} title='출발지 검색' />
+          <ButtonReverseDestination datas={cityName} handleSearch={setCityName} />
+          <ButtonDestination datas={cityName[1]} handleSearch={setCityName} title='도착지 검색' />
         </div>
         <div className={styles.travelPlans}>
           <div className={styles.travelDate}>
@@ -62,6 +58,6 @@ export default function ReservationForm({ isSelected, datas }) {
           <ButtonSubmit text='항공편 검색' />
         </div>
       </div>
-    </form >
+    </form>
   )
 }

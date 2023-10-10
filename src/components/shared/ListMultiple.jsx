@@ -3,7 +3,6 @@ import styles from './ListMultiple.module.css';
 
 export default function ListMultiple({ datas, handleClickList }) {
 
-  console.log(datas);
   return (
     <ul className={styles.listMultipleWrapper}>
       {
