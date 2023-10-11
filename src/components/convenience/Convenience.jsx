@@ -23,13 +23,15 @@ export default function Convenience() {
         spaceBetween={30}
         slidesPerView={3}
         navigation
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}
+        onSwiper={(swiper) => console.log()}
+        onSlideChange={() => console.log()}
       >
         {
           slideList.map((slide, idx) => <SwiperSlide key={idx} className='slides'>
             <div className='slide'>
-              <img src={slide.url} alt="" className='slideImg' />
+              <div>
+                <img src={slide.url} alt="" className='slideImg' />
+              </div>
               <h2>{slide.title}</h2>
             </div>
           </SwiperSlide>)

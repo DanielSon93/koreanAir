@@ -1,0 +1,25 @@
+.section {
+  width: 100vw;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #d0e7f6;
+}
+
+.wrapper {
+  width: 1315px;
+  padding: 50px 20px;
+}
+
+.wrapper>h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.wrapper>ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

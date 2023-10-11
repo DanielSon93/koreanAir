@@ -19,8 +19,18 @@
   overflow: hidden;
 }
 
+.slide>div {
+  overflow: hidden;
+  height: 227px;
+}
+
 .slideImg {
   width: 100%;
+  transition: all 0.3s;
+}
+
+.slideImg:hover {
+  transform: scale(1.2);
 }
 
 .slide>h2 {
