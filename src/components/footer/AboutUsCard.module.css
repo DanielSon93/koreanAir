@@ -1,0 +1,22 @@
+.menuList {
+  width: calc(100% / 4);
+}
+
+.menuList>h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.menuList>li {
+  margin-bottom: 0.6rem;
+}
+
+.menuList>li>a {
+  font-size: 1.4rem;
+  color: var(--color-darkgray-strong);
+  cursor: pointer;
+}
+
+.menuList>li>a:hover {
+  text-decoration: underline;
+}
