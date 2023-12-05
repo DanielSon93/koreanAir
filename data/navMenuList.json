@@ -1,0 +1,200 @@
+{
+  "navMenuList": [
+    {
+      "title": "예약",
+      "menus": [
+        {
+          "subTitle": "예약 가이드",
+          "subMenus": [
+            "운임 안내",
+            "좌석 승급",
+            "변경 및 환불",
+            "온라인 결제"
+          ]
+        },
+        {
+          "subTitle": "부가 서비스",
+          "subMenus": [
+            "대한항공 서비스",
+            "제휴 서비스"
+          ]
+        },
+        {
+          "subTitle": "유용한 정보",
+          "subMenus": [
+            "보너스 좌석 상황 보기",
+            "운항 노선도",
+            "공동운항",
+            "환승 전용 내함기",
+            "지도로 찾는 항공권"
+          ]
+        }
+      ],
+      "previews": [
+        {
+          "previewMenuText": "항공권 예매하러 가기",
+          "previewMenuImg": "https://www.koreanair.com/wwwupload/maincontents/gnb/booking_pc.jpg"
+        },
+        {
+          "previewMenuText": "보너스 좌석 상황 보기",
+          "previewMenuImg": "https://www.koreanair.com/wwwupload/maincontents/gnb/awardseat_pc.jpg"
+        }
+      ]
+    },
+    {
+      "title": "공항",
+      "menus": [
+        {
+          "subTitle": "체크인",
+          "subMenus": [
+            "사전 체크인",
+            "공항 체크인"
+          ]
+        },
+        {
+          "subTitle": "탑승 절차",
+          "subMenus": [
+            "탑승 절차 안내",
+            "SkyPriority",
+            "출입국 규정 정보"
+          ]
+        },
+        {
+          "subTitle": "공항 이용 가이드",
+          "subMenus": [
+            "인천국제공항",
+            "취항지 공항 정보",
+            "KAL라운지"
+          ]
+        },
+        {
+          "subTitle": "수하물",
+          "subMenus": [
+            "수하물 안내",
+            "운송 제한 물품",
+            "휴대 수하물",
+            "위탁 수하물",
+            "지연, 파손 및 유실물"
+          ]
+        },
+        {
+          "subTitle": "도움이 필요한 승객",
+          "subMenus": [
+            "한가족 서비스",
+            "유아 동반 승객",
+            "혼자 여행하는 어린이",
+            "몸이 불편한 승객",
+            "임신 중인 승객",
+            "반려동물 동반 승객"
+          ]
+        },
+        {
+          "subTitle": "엑설런트 프로그램",
+          "subMenus": [
+            "엑설런트 보딩패스",
+            "엑설런트 트랜짓 프로그램"
+          ]
+        }
+      ],
+      "previews": [
+        {
+          "previewMenuText": "KAL 라운지",
+          "previewMenuImg": "https://www.koreanair.com/wwwupload/maincontents/gnb/lounge_pc.jpg"
+        },
+        {
+          "previewMenuText": "위탁 수하물 계산기",
+          "previewMenuImg": "https://www.koreanair.com/wwwupload/maincontents/gnb/baggage_pc.jpg"
+        }
+      ]
+    },
+    {
+      "title": "기내",
+      "menus": [
+        {
+          "subTitle": "클래스별 서비스",
+          "subMenus": [
+            "일등석",
+            "프레스티지석",
+            "일반석"
+          ]
+        },
+        {
+          "subTitle": "기내 서비스",
+          "subMenus": [
+            "서비스 순서",
+            "기내식",
+            "기내 면세품",
+            "기내 여행 가이드",
+            "기내 엔터테인먼트",
+            "기내 와이파이"
+          ]
+        },
+        {
+          "subTitle": "항공기 안내",
+          "subMenus": [
+            "보잉 787",
+            "보잉 777",
+            "보잉 747",
+            "보잉 737",
+            "에어버스 A380",
+            "에어버스 A330",
+            "에어버스 A321",
+            "에어버스 A220"
+          ]
+        }
+      ],
+      "previews": [
+        {
+          "previewMenuText": "기내식 메뉴 조회",
+          "previewMenuImg": "https://www.koreanair.com/wwwupload/maincontents/gnb/meal_pc.jpg"
+        },
+        {
+          "previewMenuText": "기내 엔터테인먼트",
+          "previewMenuImg": "https://www.koreanair.com/wwwupload/maincontents/gnb/enter_pc.jpg"
+        }
+      ]
+    },
+    {
+      "title": "스카이패스",
+      "menus": [
+        {
+          "subTitle": "스카이패스 소개",
+          "subMenus": [
+            "회원 혜택",
+            "가족 마일리지",
+            "제휴사 할인",
+            "스카이팀 공동 혜택"
+          ]
+        },
+        {
+          "subTitle": "마일리지 적립",
+          "subMenus": [
+            "대한항공",
+            "신용카드",
+            "여행과 라이프",
+            "제휴 항공사",
+            "탑승 후 적립 안내"
+          ]
+        },
+        {
+          "subTitle": "마일리지 사용",
+          "subMenus": [
+            "대한항공 보너스",
+            "제휴 항공사 보너스",
+            "마일리지 몰"
+          ]
+        }
+      ],
+      "previews": [
+        {
+          "previewMenuText": "마일리지 몰",
+          "previewMenuImg": "https://www.koreanair.com/wwwupload/maincontents/gnb/mall_pc.jpg"
+        },
+        {
+          "previewMenuText": "탑승 후 적립 안내",
+          "previewMenuImg": "https://www.koreanair.com/wwwupload/maincontents/gnb/retro_pc.jpg"
+        }
+      ]
+    }
+  ]
+}

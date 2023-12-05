@@ -1,0 +1,88 @@
+{
+  "reservationMenuList": [
+    {
+      "about": "항공권 예매",
+      "isSelected": true,
+      "datas": {
+        "reservationType": [
+          {
+            "about": "예매",
+            "isSelected": true
+          },
+          {
+            "about": "마일리지 예매",
+            "isSelected": false
+          }
+        ],
+        "boarding": [
+          {
+            "about": "왕복",
+            "isSelected": true
+          },
+          {
+            "about": "편도",
+            "isSelected": false
+          },
+          {
+            "about": "다구간 >",
+            "isSelected": false
+          }
+        ],
+        "cityName": [
+          {
+            "destinationKor": "출발지",
+            "destinationEng": "From"
+          },
+          {
+            "destinationKor": "도착지",
+            "destinationEng": "To"
+          }
+        ]
+      }
+    },
+    {
+      "about": "예약 조회",
+      "isSelected": false
+    },
+    {
+      "about": "체크인",
+      "isSelected": false
+    },
+    {
+      "about": "항공권 현황",
+      "isSelected": false,
+      "datas": {
+        "currentSituation": [
+          {
+            "about": "출도착 현황",
+            "isSelected": true
+          },
+          {
+            "about": "주간 스케줄",
+            "isSelected": false
+          }
+        ],
+        "destination": [
+          {
+            "about": "출/도착지",
+            "isSelected": true
+          },
+          {
+            "about": "편명",
+            "isSelected": false
+          }
+        ],
+        "cityName": [
+          {
+            "destinationKor": "출발지",
+            "destinationEng": "From"
+          },
+          {
+            "destinationKor": "도착지",
+            "destinationEng": "To"
+          }
+        ]
+      }
+    }
+  ]
+}
